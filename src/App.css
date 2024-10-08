@@ -1,38 +1,90 @@
-.App {
+.mainConatiner{
+  width: 100vw;
+  height:100vh;
+  background-image: linear-gradient(to bottom ,#c9f2ee,#f7f7f5);
+}
+
+.mainHeading{
   text-align: center;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mobileContainer{
+  margin: 0px;
+  padding: 2px;
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headingElement{
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  font-size: 15px;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.qustHeading{
+  font-size: 10px;
+  margin: 0px;
+ 
+}
+
+.list{
+  list-style: none;
+  padding-left: 0px;
+ margin-left: 0px;
+ margin: 10px;
+ padding: 0px;
+  
+}
+
+
+
+.nameContainer{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100%;
+  width: 100vw;
 }
 
-.App-link {
-  color: #61dafb;
+.retryConatiner{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.redColor{
+  color: #e0263f;
+  font-size: 13px;
+}
+
+.desktopContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+
+@media (min-width:576px){
+  .mobileContainer{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .desktopContainer{
+    display: block;
   }
+  .QuestionDiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.green{
+  color: green;
 }
